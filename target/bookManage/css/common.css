@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?fmptcx');
+    src:  url('../fonts/icomoon.eot?fmptcx#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?fmptcx') format('truetype'),
+    url('../fonts/icomoon.woff?fmptcx') format('woff'),
+    url('../fonts/icomoon.svg?fmptcx#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+ul{
+    list-style: none;
+}
+.ins-body{
+    width: 1000px;
+    height: 700px;
+}
+.system-div{
+    position: relative;
+}
+
+.header{
+    position: relative;
+    height:60px ;
+    width: 100%;
+    background-color: #2e3138;
+    line-height: 50px;
+}
+
+.header h2{
+    position:absolute;
+    left:20px;
+    font-size: 20px;
+    color:#fff;
+}
+.header a{
+    position:absolute;
+    right:40px;
+    font-size: 12px;
+    color:#fff;
+}
+.header a:after{
+    content:'\e904';
+    font-family: 'icomoon';
+}
+.middle{
+    width: 1080px;
+    height: 600px;
+    background-color: #fff;
+}
+
+.left{
+    position:absolute;
+    width: 200px;
+    height:100%;
+    background-color: #40454e;
+}
+.left ul li{
+    height: 50px;
+    width: 200px;
+    line-height: 50px;
+    font-size:15px;
+    font-weight: 400;
+    font-weight: 400;
+    /*background-color: #2e3138;*/
+    background-color: #40454e;
+    color:#fff;
+}
+
+.left ul li:nth-child(2),
+.left ul li:nth-child(4),
+.left ul li:nth-child(5),
+.left ul li:nth-child(7),
+.left ul li:nth-child(8) {
+    display: none;
+    background-color: #2e3138;
+}
+.left ul li button{
+    height: 50px;
+    width: 170px;
+    font-size: 15px;
+    padding-left: 10px;
+    border:none;
+    outline:none;
+    background-color: transparent;
+    color:#fff;
+    text-align:left;
+}
+
+.left ul .father span:after{
+    content: '\e900';
+    font-family: 'icomoon';
+}
+
+.left ul .son button{
+    width: 200px;
+    background-color: #50545c;
+    font-size: 13px;
+}
+.left ul li:hover{
+    background-color: #50545c;
+}
+.right{
+    position:absolute;
+    left:200px;
+    top:60px;
+    width: 100%;
+    height:100%;
+    background-color: #e2e2e2;
+    color:#a7acad;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.footer{
+    position: relative;
+    height:5px ;
+    background-color: #2e3138;
+}
+
+

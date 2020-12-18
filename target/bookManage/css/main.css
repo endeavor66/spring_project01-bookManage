@@ -1,0 +1,39 @@
+
+.right table{
+    width: 800px;
+    border:1px solid #e2e2e2;
+    text-align: center;
+}
+.right table td{
+    width: 300px;
+}
+.right .ins-header{
+    width: 1000px;
+    height:50px ;
+    margin-bottom: 20px;
+    background-color: #fff;
+    line-height: 50px;
+
+}
+
+.right .ins-header h4{
+    padding-left: 20px;
+}
+.ins-middle{
+    height:380px ;
+    width: 1000px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    line-height: 50px;
+}
+
+.ins-footer{
+    width: 1000px;
+    height:110px ;
+    margin-bottom: 20px;
+    background-color: #fff;
+    line-height: 50px;
+}
+
+
+

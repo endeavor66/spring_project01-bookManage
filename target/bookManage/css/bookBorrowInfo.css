@@ -1,0 +1,55 @@
+html{
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
+.book-borrow-info{
+    height: 370px;
+    width: 570px;
+    margin-left: 350px;
+    margin-top:100px;
+    background-color: #f1f5f5;
+}
+
+.bookBorrowInfoForm{
+    height: 400px;
+    width: 600px;
+    font-size: 15px;
+
+}
+.bookBorrowInfoForm  h4{
+    height: 55px;
+    line-height: 55px;
+    width: 566px;
+    background-color: #2e9687;
+    color:#fff;
+    font-size: 17px;
+    font-weight: 400;
+    padding-left: 5px;
+}
+.bookBorrowInfoForm tr{
+    height: 60px;
+    margin-bottom: 10px;
+}
+.bookBorrowInfoBarCode, .bookBorrowInfoTel, .bookBorrowInfoTime
+{
+    height: 30px;
+    width: 300px;
+    margin-left: 50px;
+}
+.bookBorrowInfoSubmit,.bookBorrowInfoReset{
+    margin-top:40px;
+    height: 30px;
+    width: 50px;
+    border:none;
+
+}
+.bookBorrowInfoSubmit{
+
+    margin-left: 200px;
+    background-color: #2e9687;
+}
+.bookBorrowInfoReset{
+    margin-left: 10px;
+    background-color: #dedcdc;
+}

@@ -1,0 +1,156 @@
+html{
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+.bookBorrow-body{
+    background-color: #e2e2e2;
+    color:#a7acad;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.bookBorrow-header{
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.bookBorrow-header span:nth-child(1){
+    margin-left: 10px;
+    font-size: 13px;
+}
+.bookBorrow-header span:nth-child(2){
+    font-size: 16px;
+    color:black;
+}
+.bookBorrow-search{
+    height: 150px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #fff;
+    color:black;
+}
+.bookBorrow-search h4{
+    padding-top: 20px;
+    padding-left: 25px;
+    font-weight: 400;
+    font-size: 16px;
+}
+.bookBorrow-find{
+    margin-top: 20px;
+    height: 40px;
+    width:100%;
+}
+.bookBorrow-search .bookBorrow-telNum,.bookBorrow-search .bookBorrow-barCode {
+    margin-left:20px;
+    height: 30px;
+    width: 200px;
+    line-height: 50px;
+}
+.telNum{
+    margin-left: 20px;
+}
+.bookBorrow-search-btn,.bookBorrow-add-btn{
+    height: 35px;
+    width: 60px;
+    border:none;
+    background-color: #2e9687;
+}
+.bookBorrow-search-btn{
+    margin-left: 15px;
+}
+.bookBorrow-manage{
+    height: 500px;
+    width: 100%;
+    background-color:  #fff;
+}
+
+.bookBorrow-manage tr:nth-child(1) {
+    background-color:  #e2e2e2;
+}
+.bookBorrow-add{
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.bookBorrow-add-btn{
+    line-height: 40px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.bookBorrow-bookInfo{
+    margin-top: 10px;
+    width: 900px;
+    height: 242px;
+    overflow-y:hidden;
+    background-color: #fff;
+}
+
+
+.bookBorrow-bookInfo .dataList{
+    width: 800px;
+    margin-left: 20px;
+    text-align: center;
+    color:black;
+}
+.bookBorrow-bookInfo .dataList tr{
+    height:40px;
+    background-color: #fff;
+}
+/*.bookBorrow-bookInfo .dataList tr{*/
+/*    height: 34px;*/
+
+/*}*/
+.bookBorrow-bookInfo .dataList a{
+    color: #dc6811;
+    font-size: 14px;
+}
+.fenye{
+    /*给父盒子添加text-align: center;则子盒子和子盒子里面的内容都水平居中*/
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.fenye a{
+    display:inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: #f7f7f7;
+    border:1px solid #ccc;
+    text-decoration: none;
+    text-align: center;
+    line-height: 36px;
+    color:#333;
+    font-size: 14px;
+
+}
+.fenye .prev,
+.fenye .next{
+    width:85px;
+}
+.fenye .elp{
+    background-color: #fff;
+    border:none;
+}
+.fenye input{
+    height: 36px;
+    width: 45px;
+    border:1px solid #ccc;
+    /*取消点击后蓝色边框*/
+    outline:none;
+}
+.fenye button{
+    height: 36px;
+    width: 60px;
+    background-color: #f7f7f7;
+    border:1px solid #ccc;
+}
+.marginTop{
+    margin-top: 70px;
+}
+.reHeight{
+    height:312px;
+}

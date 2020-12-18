@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zhongruan.dao.BorrowDao">
+    <select id="findAll" resultType="record">
+        <if test="state==1">
+            select r.name as rname, r.phone, b.name as bname, b.code, c.duration, c.borrowTime
+                from reader r, book b, borrow c where c.state = #{state} and c.rid = r.rid and c.bid = b.bid
+        </if>
+        <if test="state==0">
+            select r.name as rname, r.phone, b.name as bname, b.code, c.duration, c.borrowTime, c.returnTime
+                from reader r, book b, borrow c where c.state = #{state} and c.rid = r.rid and c.bid = b.bid
+        </if>
+        <if test="rid!=0">
+            and c.rid = #{rid}
+        </if>
+        <if test="bid!=0">
+            and c.bid = #{bid}
+        </if>
+        limit #{start},#{pageSize}
+    </select>
+
+    <select id="findTotalCount" resultType="int">
+        select count(*) from borrow b where state = ${state}
+        <if test="rid!=0">
+            and rid = #{rid}
+        </if>
+        <if test="bid!=0">
+            and bid = #{bid}
+        </if>
+    </select>
+
+    <insert id="addRecord" parameterType="record">
+        insert into borrow(rid, bid, borrowTime, duration, state)
+            values(#{rid},#{bid},#{borrowTime},#{duration},#{state})
+    </insert>
+
+    <update id="updateRecode" parameterType="record">
+        update borrow set state = #{state}, returnTime = #{returnTime} where rid = #{rid} and bid = #{bid}
+    </update>
+</mapper>

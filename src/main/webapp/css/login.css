@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding:0;
+}
+.login-page{
+    background-color: #a2acb3;
+}
+.login_div{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    height: 340px;
+    width: 400px;
+    background-color: #fff;
+    color:#fff;
+}
+.top{
+    position:absolute;
+    height: 50px;
+    width: 340px;
+    left:-10px;
+    top:40px;
+    text-align: left;
+    line-height: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: #2e9687;
+}
+.top h4{
+    padding-left: 50px;
+}
+
+.login_div i{
+    position: absolute;
+    left:-10px;
+    top:90px;
+    width: 0;
+    height: 0;
+    /*上边框高度调大*/
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #111315;
+    /*左和下边框设为0*/
+    border-top: 0 solid blue;
+    border-left:0 solid green;
+}
+.login_table
+{
+    position:absolute;
+    bottom: 40px;
+    left:30px;
+    height: 200px;
+    width: 300px;
+    /*background-color: blue;*/
+    border:none;
+}
+.login_table tr{
+    margin-bottom: 10px;
+}
+.login_table input{
+    height: 40px;
+    width: 300px;
+}
+
+.submit{
+    border: none;
+    background-color: #2e9687;
+}
